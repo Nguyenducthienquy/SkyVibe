@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Science Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .container {
+        display: grid;
+        margin-left: 6%;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        gap: 5px;
+      }
+      .button {
+        border-radius: 10px;
+        border: 2px solid rgba(0, 230, 103, 0.75);
+        background-color: rgb(0, 223, 100);
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        color: white;
+        font-weight: bolder;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background: #ffffff;
+      }
+      h3 {
+        margin: 20px 0 0 0;
+        text-align: center;
+        color: #333;
+      }
+      h1 {
+        margin: 20px 0 0 0;
+        text-align: center;
+        color: #333;
+      }
+      .article {
+        background: rgb(255, 245, 245);
+        padding: 15px;
+        margin: 20px;
+        border-radius: 5px;
+        border: 1.5px solid rgb(207, 207, 207);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .article h2 {
+        margin: 0 0 10px;
+        font-size: 20px;
+        color: #0072ec;
+      }
+      .article p {
+        margin: 0;
+        color: #000000;
+      }
+      .article a {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #0072ec;
+        text-decoration: underline;
+      }
+      .contract {
+        display: inline;
+      }
+      #foot {
+        padding: 5px;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        background-color: rgb(0, 0, 0);
+      }
+      .navbar navbar-expand-lg bg-body-tertiary {
+        background-color: rgba(255, 255, 255, 0.35);
+      }
+      .logo {
+        border: 5px solid rgb(253, 252, 255);
+        margin-left: 42px;
+        background-color: rgba(255, 255, 255, 0.226);
+      }
+      .navbar-brand {
+        font-size: 35px;
+        margin-left: 25px;
+        margin-right: 45px;
+      }
+      .nav-link {
+        font-size: 25px;
+        margin-right: 42px;
+        margin-top: 1%;
+      }
+      .btn-danger dropdown-toggle {
+        background-color: rgb(255, 255, 255);
+        border: 1px solid black;
+        border-radius: 100px;
+      }
+      .navbar {
+        background-color: rgb(240, 240, 240) !important;
+      }
+      .button:hover {
+        border: 2px solid rgb(100, 232, 255);
+        background-color: rgb(0, 217, 255);
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          display: grid;
+          margin-left: 0%;
+          grid-template-columns: auto auto;
+          grid-template-rows: auto auto auto auto;
+          gap: 5px;
+          margin-bottom: 5px;
+        }
+        .button {
+          border-radius: 5px;
+          border: 2px solid rgba(0, 230, 103, 0.75);
+          background-color: rgb(0, 223, 100);
+          width: 100%;
+          height: 35px;
+          font-size: 20px;
+          color: white;
+          font-weight: bolder;
+        }
+        .article {
+          padding: 7.5px;
+          margin: 3%;
+        }
+        h1 {
+          margin: 10px 0 0 0;
+        }
+        .navbar-brand {
+          font-size: 24px;
+          margin: 0;
+        }
+        .nav-link {
+          font-size: 18px;
+          margin: 0;
+          text-align: center;
+        }
+        .btn-danger.dropdown-toggle {
+          font-size: 18px !important;
+          margin: 10px 0 !important;
+          width: 100%;
+        }
+
+        .logo img {
+          width: 50px;
+          height: 50px;
+        }
+
+        #navbarNavAltMarkup {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .navbar-nav {
+          width: 100%;
+          align-items: center;
+        }
+
+        #foot {
+          position: relative;
+          font-size: 14px;
+        }
+
+        .contract img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a style="font-weight: bolder" class="navbar-brand" href="../news.html"
+          >✨ Science</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="../main.html">Home</a>
+            <a class="nav-link" href="../seacity.html">Search/City</a>
+            <a class="nav-link" href="../location.html">My Location</a>
+            <a class="nav-link" href="../forecast.html">Forecast</a>
+            <!-- Example single danger button -->
+            <div class="btn-group">
+              <button
+                style="
+                  margin-right: 42px;
+                  font-size: 25px;
+                  background-color: rgba(255, 255, 255, 0); /* Nền xanh */
+                  color: rgb(0, 0, 0); /* Màu chữ */
+                  border: 2px solid #000000; /* Viền xanh đậm */
+                  border-radius: 7.5px; /* Bo góc */
+                "
+                type="button"
+                class="btn-danger dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                News
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="entertainment.html"
+                    >Entertainment</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="general.html">General</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="health.html"> Health</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="science.html">Science</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="sport.html">Sport</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="technology.html">Technology</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="vietnam.html">Vietnam</a>
+                </li>
+
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="world.html">World</a>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button
+                style="
+                  font-size: 25px;
+                  background-color: rgba(255, 255, 255, 0); /* Nền xanh */
+                  color: rgb(0, 0, 0); /* Màu chữ */
+                  border: 2px solid #000000; /* Viền xanh đậm */
+                  border-radius: 7.5px; /* Bo góc */
+                "
+                type="button"
+                class="btn-danger dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Setting
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../setting/about.html"
+                    >About</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="../login.html">Đăng suất</a>
+                </li>
+              </ul>
+            </div>
+            <a class="logo" href="../main.html"
+              ><img
+                src="https://i.ibb.co/nsQbSJyc/skyvibe.png"
+                width="70"
+                height="70"
+                alt="skyvibe"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <h1>Chủ đề: Khoa học</h1>
+    <div id="news-container"></div>
+    <h3>Có lẽ bạn cũng sẽ thích:</h3>
+    <br />
+    <div class="container">
+      <input
+        class="button"
+        type="submit"
+        onclick="window.location.href='entertainment.html'"
+        value="🎉Entertainment"
+      />
+      <input
+        class="button"
+        type="submit"
+        onclick="window.location.href='general.html'"
+        value="📰General"
+      />
+      <input
+        class="button"
+        type="submit"
+        onclick="window.location.href='health.html'"
+        value="❤️Health"
+      />
+      <input
+        class="button"
+        type="submit"
+        onclick="window.location.href='science.html'"
+        value="✨Science"
+      />
+      <input
+        class="button"
+        type="submit"
+        onclick="window.location.href='sport.html'"
+        value="⚽Sport🏀"
+      />
+      <input
+        class="button"
+        type="submit"
+        onclick="window.location.href='technology.html'"
+        value="🔧Technology"
+      />
+      <input
+        class="button"
+        type="submit"
+        onclick="window.location.href='vietnam.html'"
+        value="🚩Việt Nam⭐"
+      />
+      <input class = "button" type="submit"
+      onclick="window.location.href='world.html'"" value="🗺️World">
+    </div>
+    <div id="news-container"></div>
+    <script>
+      const apiKey = "cd1000a4e0c347c28f59e50014505706";
+      const topic = "science";
+      const url = `https://newsapi.org/v2/everything?q=${topic}&language=vi&pageSize=5&sortBy=publishedAt&apiKey=${apiKey}`;
+
+      fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+          const container = document.getElementById("news-container");
+          if (data.articles.length === 0) {
+            container.innerHTML = "<p>Không tìm thấy bài viết nào.</p>";
+          } else {
+            data.articles.forEach((article) => {
+              const div = document.createElement("div");
+              div.className = "article";
+              div.innerHTML = `
+              <h2>${article.title}</h2>
+              <p>${article.description || "Không có mô tả."}</p>
+              <a href="${article.url}" target="_blank">Đọc thêm</a>
+            `;
+              container.appendChild(div);
+            });
+          }
+        })
+        .catch((error) => {
+          document.getElementById("news-container").innerHTML =
+            "<p>Không thể tải dữ liệu tin tức.</p>";
+          console.error(error);
+        });
+      const container = document.getElementById("news-container");
+
+      fakeData.articles.forEach((article) => {
+        const div = document.createElement("div");
+        div.className = "article";
+        div.innerHTML = `
+    <h2>${article.title}</h2>
+    <p>${article.description}</p>
+    <a href="${article.url}" target="_blank">Đọc thêm</a>
+  `;
+        container.appendChild(div);
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      (function () {
+        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+          window.chatbase = (...arguments) => {
+            if (!window.chatbase.q) {
+              window.chatbase.q = [];
+            }
+            window.chatbase.q.push(arguments);
+          };
+          window.chatbase = new Proxy(window.chatbase, {
+            get(target, prop) {
+              if (prop === "q") {
+                return target.q;
+              }
+              return (...args) => target(prop, ...args);
+            },
+          });
+        }
+        const onLoad = function () {
+          const script = document.createElement("script");
+          script.src = "https://www.chatbase.co/embed.min.js";
+          script.id = "ELcdvgEDYbgjLgF3pupPW";
+          script.domain = "www.chatbase.co";
+          document.body.appendChild(script);
+        };
+        if (document.readyState === "complete") {
+          onLoad();
+        } else {
+          window.addEventListener("load", onLoad);
+        }
+      })();
+    </script>
+  </body>
+  <footer>
+    <div id="foot">
+      <p class="contract">Phone number: 090 2729 859</p>
+      <br />
+      <p class="contract">Contract:</p>
+      <a
+        ><img
+          style="background-color: white; border-radius: 4px"
+          src="https://iconape.com/wp-content/png_logo_vector/zalo.png"
+          width="25"
+          height="25"
+          alt="zalo"
+      /></a>
+      <a
+        ><img
+          src="https://cdn.pixabay.com/photo/2021/06/15/12/51/facebook-6338509_1280.png"
+          width="25"
+          height="25"
+          alt="zalo"
+      /></a>
+      <a
+        ><img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Facebook_Messenger_logo_2020.svg/1200px-Facebook_Messenger_logo_2020.svg.png"
+          width="25"
+          height="25"
+          alt="zalo"
+      /></a>
+    </div>
+  </footer>
+</html>

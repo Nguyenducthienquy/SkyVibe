@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .contract {
+        display: inline;
+      }
+      #foot {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        margin-top: 14px;
+        padding: 5px;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        background-color: rgb(0, 0, 0);
+      }
+      .navbar navbar-expand-lg bg-body-tertiary {
+        background-color: rgba(255, 255, 255, 0.35);
+      }
+      .logo {
+        border: 5px solid rgb(253, 252, 255);
+        margin-left: 45px;
+        background-color: rgba(255, 255, 255, 0.226);
+      }
+      .navbar-brand {
+        font-size: 35px;
+        margin-left: 25px;
+        margin-right: 65px;
+      }
+      .nav-link {
+        font-size: 25px;
+        margin-right: 45px;
+        margin-top: 1%;
+      }
+      .btn-danger dropdown-toggle {
+        background-color: rgb(255, 255, 255);
+        border: 1px solid black;
+        border-radius: 100px;
+      }
+      .navbar {
+        background-color: rgb(240, 240, 240) !important;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a style="font-weight: bolder" class="navbar-brand" href="theme.html"
+          >⬛Theme⬜</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="../main.html">Home</a>
+            <a class="nav-link" href="../seacity.html">Search/City</a>
+            <a class="nav-link" href="../location.html">My Location</a>
+            <a class="nav-link" href="../forecast.html">Forecast</a>
+            <!-- Example single danger button -->
+            <div class="btn-group">
+              <button
+                style="
+                  margin-right: 45px;
+                  font-size: 25px;
+                  background-color: rgba(255, 255, 255, 0); /* Nền xanh */
+                  color: rgb(0, 0, 0); /* Màu chữ */
+                  border: 2px solid #000000; /* Viền xanh đậm */
+                  border-radius: 7.5px; /* Bo góc */
+                "
+                type="button"
+                class="btn-danger dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                News
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../news/entertainment.html"
+                    >Entertainment</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../news/general.html"
+                    >General</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../news/health.html">Health</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../news/science.html"
+                    >Science</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../news/sport.html">Sport</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../news/technology.html"
+                    >Technology</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../news/vietnam.html"
+                    >Vietnam</a
+                  >
+                </li>
+
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="../news/world.html">World</a>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button
+                style="
+                  font-size: 25px;
+                  background-color: rgba(255, 255, 255, 0); /* Nền xanh */
+                  color: rgb(0, 0, 0); /* Màu chữ */
+                  border: 2px solid #000000; /* Viền xanh đậm */
+                  border-radius: 7.5px; /* Bo góc */
+                "
+                type="button"
+                class="btn-danger dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Setting
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="about.html">About</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="theme.html">Theme</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="../login.html">Đăng suất</a>
+                </li>
+              </ul>
+            </div>
+            <a class="logo" href="../main.html"
+              ><img
+                src="https://i.ibb.co/nsQbSJyc/skyvibe.png"
+                width="70"
+                height="70"
+                alt="skyvibe"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <h2>Chọn màu nền:</h2>
+
+    <!-- Nút chọn hai màu tùy ý -->
+    <button onclick="setBackgroundColor('white')">Trắng</button>
+    <button onclick="setBackgroundColor('rgb(5, 0, 20)')">Đen</button>
+
+    <script>
+      function setBackgroundColor(color) {
+        // Đổi màu nền
+        document.body.style.backgroundColor = color;
+
+        // Đổi màu chữ tùy theo nền để dễ đọc
+        let textColor;
+
+        // Nếu là nền xám đậm thì chữ sáng, nếu là xanh nhạt thì chữ tối
+        if (color === "rgb(5, 0, 20)") {
+          textColor = "white";
+        } else if (color === "white") {
+          textColor = "black";
+        } else {
+          textColor = "black"; // mặc định
+        }
+
+        document.body.style.color = textColor;
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <footer>
+    <div id="foot">
+      <p class="contract">Phone number: 090 2729 859</p>
+      <br />
+      <p class="contract">Contract:</p>
+      <a
+        ><img
+          style="background-color: white; border-radius: 4px"
+          src="https://iconape.com/wp-content/png_logo_vector/zalo.png"
+          width="25"
+          height="25"
+          alt="zalo"
+      /></a>
+      <a
+        ><img
+          src="https://cdn.pixabay.com/photo/2021/06/15/12/51/facebook-6338509_1280.png"
+          width="25"
+          height="25"
+          alt="zalo"
+      /></a>
+      <a
+        ><img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Facebook_Messenger_logo_2020.svg/1200px-Facebook_Messenger_logo_2020.svg.png"
+          width="25"
+          height="25"
+          alt="zalo"
+      /></a>
+    </div>
+  </footer>
+</html>

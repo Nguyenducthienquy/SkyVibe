@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .blockqt {
+        font-weight: bold;
+        font-family: "Arial Narrow Bold", sans-serif;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+      }
+      .contract {
+        display: inline;
+      }
+      #foot {
+        padding: 5px;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        background-color: rgb(0, 0, 0);
+      }
+      .Wel {
+        text-align: center;
+        color: white;
+        font-size: 150px;
+        font-family: "Arial Narrow Bold", sans-serif;
+        font-weight: bold;
+      }
+      .navbar navbar-expand-lg bg-body-tertiary {
+        background-color: rgba(255, 255, 255, 0.35);
+      }
+      body {
+        background-image: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGF5ZDAwcXh5bGEzYTg5eGx1MXRidmt5NDhxdWpjNncyN2h2cWpwMCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xUa0xPj1h7Lf4RrOq4/giphy.webp");
+        background-size: cover; /* co giãn hình để phủ toàn bộ */
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .logo {
+        margin-left: 47px;
+        border: 5px solid rgb(253, 252, 255);
+        background-color: rgba(255, 255, 255, 0.226);
+      }
+      .navbar-brand {
+        font-size: 35px;
+        margin-left: 25px;
+        margin-right: 65px;
+      }
+      .nav-link {
+        margin-right: 47px;
+        font-size: 25px;
+        margin-top: 1%;
+      }
+      .btn-danger dropdown-toggle {
+        background-color: rgb(255, 255, 255);
+        border: 1px solid black;
+        border-radius: 100px;
+      }
+      .navbar {
+        background-color: rgba(255, 255, 255, 0.5) !important;
+      }
+      @media (max-width: 794px) {
+        .Wel {
+          font-size: 100px !important;
+          margin-top: 0px !important;
+        }
+      
+        .blockqt {
+          font-size: 20px;
+          padding: 0px 0 0 0;
+        }
+      
+        .navbar-brand {
+          font-size: 24px;
+          margin: 0;
+        }
+      
+        .nav-link {
+          font-size: 18px;
+          margin: 0;
+          text-align: center;
+        }
+      
+        .btn-danger.dropdown-toggle {
+          font-size: 18px !important;
+          margin: 10px 0 !important;
+          width: 100%;
+        }
+      
+        .logo img {
+          width: 50px;
+          height: 50px;
+        }
+      
+        #navbarNavAltMarkup {
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .navbar-nav {
+          width: 100%;
+          align-items: center;
+        }
+      
+        #foot {
+          position: relative;
+          bottom: 0px;
+          width: 100%;
+          font-size: 20px;
+        }
+      
+        .contract img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a style="font-weight: bolder" class="navbar-brand" href="main.html"
+          >🏠 Home</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a style="font-weight: bolder" class="nav-link" href="main.html"
+              >Home</a
+            >
+            <a class="nav-link" href="seacity.html">Search/City</a>
+            <a class="nav-link" href="location.html">My Location</a>
+            <a class="nav-link" href="forecast.html">Forecast</a>
+            <!-- Example single danger button -->
+            <div class="btn-group">
+              <button
+                style="
+                  margin-right: 42px;
+                  font-size: 25px;
+                  background-color: rgba(255, 255, 255, 0); /* Nền xanh */
+                  color: rgb(0, 0, 0); /* Màu chữ */
+                  border: 2px solid #000000; /* Viền xanh đậm */
+                  border-radius: 7.5px; /* Bo góc */
+                "
+                type="button"
+                class="btn-danger dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                News
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="news/entertainment.html"
+                    >Entertainment</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="news/general.html">General</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="news/health.html">Health</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="news/science.html">Science</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="news/sport.html">Sport</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="news/technology.html"
+                    >Technology</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="news/vietnam.html">Vietnam</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="news/world.html">World</a>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button
+                style="
+                  font-size: 25px;
+                  background-color: rgba(255, 255, 255, 0); /* Nền xanh */
+                  color: rgb(0, 0, 0); /* Màu chữ */
+                  border: 2px solid #000000; /* Viền xanh đậm */
+                  border-radius: 7.5px; /* Bo góc */
+                "
+                type="button"
+                class="btn-danger dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Setting
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="setting/about.html">About</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="login.html">Đăng suất</a>
+                </li>
+              </ul>
+            </div>
+            <a class="logo" href="main.html"
+              ><img
+                src="https://i.ibb.co/nsQbSJyc/skyvibe.png"
+                width="70"
+                height="70"
+                alt="skyvibe"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <p class="Wel" style="margin-top: 40px">Welcome To</p>
+    <p class="Wel" style="margin-top: -50px">☀️SkyVibe🌧️</p>
+    <p class="blockqt" style="margin-top: 25px">
+      This is where you can know more about the future!
+    </p>
+    <p class="blockqt" style="margin-top: -22px; margin-bottom: 40px">
+      (a.k.a weather forecast)
+    </p>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      (function () {
+        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+          window.chatbase = (...arguments) => {
+            if (!window.chatbase.q) {
+              window.chatbase.q = [];
+            }
+            window.chatbase.q.push(arguments);
+          };
+          window.chatbase = new Proxy(window.chatbase, {
+            get(target, prop) {
+              if (prop === "q") {
+                return target.q;
+              }
+              return (...args) => target(prop, ...args);
+            },
+          });
+        }
+        const onLoad = function () {
+          const script = document.createElement("script");
+          script.src = "https://www.chatbase.co/embed.min.js";
+          script.id = "ELcdvgEDYbgjLgF3pupPW";
+          script.domain = "www.chatbase.co";
+          document.body.appendChild(script);
+        };
+        if (document.readyState === "complete") {
+          onLoad();
+        } else {
+          window.addEventListener("load", onLoad);
+        }
+      })();
+    </script>
+
+    <footer>
+      <div id="foot">
+        <p class="contract">Phone number: 090 2729 859</p>
+        <br />
+        <p class="contract">Contract:</p>
+        <a
+          ><img
+            style="background-color: white; border-radius: 4px"
+            src="https://iconape.com/wp-content/png_logo_vector/zalo.png"
+            width="25"
+            height="25"
+            alt="zalo"
+        /></a>
+        <a
+          ><img
+            src="https://cdn.pixabay.com/photo/2021/06/15/12/51/facebook-6338509_1280.png"
+            width="25"
+            height="25"
+            alt="zalo"
+        /></a>
+        <a
+          ><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Facebook_Messenger_logo_2020.svg/1200px-Facebook_Messenger_logo_2020.svg.png"
+            width="25"
+            height="25"
+            alt="zalo"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

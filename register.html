@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up </title>
+    <style>
+        #link:hover {
+            color: red;
+        }
+        .logo {
+            border: 5px solid rgb(253, 252, 255);
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: rgba(255, 255, 255, 0.226);
+        }
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .button {
+            border: 0px;
+            background-color: rgb(255, 35, 35);
+            width: 100%;
+            height: 40px;
+            font-size: 18px;
+            color: white;
+        }
+        .button:hover {
+            background-color: #ffffff; /* Màu nền khi di chuột vào */
+            color: rgb(255, 35, 35);
+        }
+        input::placeholder {
+            color: rgb(156, 156, 156);
+        }
+        .input:hover {
+            background-color: rgb(90, 90, 90);
+        }
+        .input {
+            color: white;
+            border: 0px;
+            opacity: 100%;
+            width: 99%;
+            height: 40px;
+            background-color: rgb(80, 80, 80);
+        }
+        body {
+            display: flex;
+            justify-content: center; /* căn ngang */
+            align-items: center;     /* căn dọc */
+            background-image: url('https://wallpaperaccess.com/full/2859913.jpg');
+            background-size: cover; /* co giãn hình để phủ toàn bộ */
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #div{ 
+            width: 350px;
+            margin-top: 0%;
+            padding: 4.7%;
+            background-color: rgba(0, 0, 0, 0.767);
+        }
+        .label {
+            color: white;
+
+        }
+        .p {
+            color: white;
+            display: inline;
+
+        }
+    </style>
+</head>
+
+<body>
+    <a class="logo" href="https://ibb.co/nsQbSJyc"><img src="https://i.ibb.co/nsQbSJyc/skyvibe.png" width="100" height="100" alt="skyvibe"></a>
+    <div id="div">
+        <h1 style="text-align: left; color: white;"> Sign Up</h1>
+            <input class = "input" type="text" maxlength="20" id="name" placeholder="   Username"><br><br>
+            <input class = "input" type="email" id="email" placeholder="   Email address"><br><br>
+            <input class = "input" type="password" maxlength="20" id="password" placeholder="   Password"><br><br><br>
+            <input onclick="check()" class = "button" type="submit" value="Sign up"><br><br>
+        </form>
+        <br>
+        <p class="p" style="color:gray;">Old to SkyVibe?</p> <a href="login.html" id="link" class="p">Sign in now</a>
+    </div>
+
+    <script>
+        function check() {
+            var input1 = document.getElementById("name").value.trim();
+            const hasLetter = /[a-zA-Z]/.test(input1);            
+            var input2 = document.getElementById("password").value.trim();
+            var input3 = document.getElementById("email").value.trim();
+            var length1 = input1.length;
+            var length2 = input2.length;
+            var length3 = input3.length;
+            if (length1 == 0) {
+                alert("Username không được bỏ trống")
+            } else if (hasLetter) {
+                if (length3 == 0) {
+                    alert("Email không được bỏ trống")
+                } else if (length2 == 0) {
+                    alert("Password không được bỏ trống")
+                } else if (input3.includes('@gmail.com')) {
+                    if (length2 <5 ) {
+                        alert("password phải trên 5 ký tự")
+                    } else {
+                        localStorage.setItem("username", input1);
+                        localStorage.setItem("password", input2);
+                        localStorage.setItem("email", input3);
+                        window.location.href = "login.html";
+                    }
+                } else {
+                    alert("Email phải có @gmail.com")
+                } 
+            } else {
+                alert("Username phải có chữ trong đó")
+            }
+        }
+    </script>
+</body>
+
+
+
+
+
+
+

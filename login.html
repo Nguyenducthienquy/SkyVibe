@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <style>
+        #link:hover {
+            color: red;
+        }
+        .logo {
+            border: 5px solid rgb(253, 252, 255);
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: rgba(255, 255, 255, 0.226);
+        }
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .button {
+            border: 0px;
+            background-color: rgb(255, 35, 35);
+            width: 100%;
+            height: 40px;
+            font-size: 18px;
+            color: white;
+        }
+        .button:hover {
+            background-color: #ffffff; /* Màu nền khi di chuột vào */
+            color: rgb(255, 35, 35);
+        }
+        input::placeholder {
+            color: rgb(156, 156, 156);
+        }
+        .input:hover {
+            background-color: rgb(90, 90, 90);
+        }
+        .input {
+            color: white;
+            border: 0px;
+            opacity: 100%;
+            width: 99%;
+            height: 40px;
+            background-color: rgb(80, 80, 80);
+        }
+        body {
+            display: flex;
+            justify-content: center; /* căn ngang */
+            align-items: center;     /* căn dọc */
+            background-image: url('https://wallpaperaccess.com/full/5911345.jpg');
+            background-size: cover; /* co giãn hình để phủ toàn bộ */
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #div {
+            width: 350px;
+            margin-top: 0%;
+            padding: 4.7%;
+            background-color: rgba(0, 0, 0, 0.767);
+        }
+        .label {
+            color: white;
+
+        }
+        .p {
+            color: white;
+            display: inline;
+
+        }
+    </style>
+</head>
+
+<body>
+    <a class="logo" href="https://ibb.co/nsQbSJyc"><img src="https://i.ibb.co/nsQbSJyc/skyvibe.png" width="100" height="100" alt="skyvibe"></a>
+    <div id="div">
+        <h1 style="text-align: left; color: white;"> Sign In</h1>
+            <input class = "input" type="text" id="name" placeholder="   Username"><br><br>
+            <input class = "input" type="password" id="password" placeholder="   Password"><br><br><br>
+            <input onclick="check()" class = "button" type="submit" value="Sign in"><br><br>
+        </form>
+        <br>
+        <p class="p" style="color:gray;">New to SkyVibe?</p> <a href="register.html" id = "link" class="p">Sign up now</a>
+    </div>
+    <script>
+        function check() {
+            var input1 = document.getElementById("name").value.trim();
+            var input2 = document.getElementById("password").value.trim();
+            const output1 = localStorage.getItem("username");
+            const output2 = localStorage.getItem("password");
+            if (input1 == output1) {
+                if (input2 === output2) {
+                    window.location.href = "main.html";
+                } else {
+                    alert("Password không đúng!");
+                }
+            } else {
+                alert("Username không đúng!");
+            }
+        }
+    </script>
+</body>
